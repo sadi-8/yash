@@ -1,0 +1,25 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as s
+df = pd.read_csv(r"C:\Users\betp\Downloads/mtcars.csv")
+print(df)
+mpg=df['mpg']
+plt.hist(mpg)
+
+m.ylabel('Frequency')
+m.title('Frequency Distribution of mpg')
+m.show()
+
+plt.scatter(df['wt'],df['mpg'])
+plt.xlabel('wt')
+plt.ylabel('mpg')
+plt.show()
+
+plt.bar(df['rownames'],df['wt'])
+plt.xlabel('rowname')
+plt.ylabel('wt')
+plt.show()
+
+plt.boxplot(df["mpg"])
+plt.xlabel('mpg')
+plt.show()
